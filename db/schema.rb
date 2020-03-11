@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_191521) do
+ActiveRecord::Schema.define(version: 2020_03_11_192458) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2020_03_11_191521) do
 
   create_table "pokedexes", force: :cascade do |t|
     t.integer "trainer_id"
-    t.integer "percent_complete"
+    t.float "percent_complete"
     t.string "trainer_name"
     t.string "color"
   end
