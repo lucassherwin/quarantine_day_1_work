@@ -1,15 +1,11 @@
-# Employee.destroy_all
-# Manager.destroy_all
-# Department.destroy_all
+Pokemon.destroy_all
+Trainer.destroy_all
+# Pokedex.destroy_all
 
-# m1 = Manager.create(name: "Tashawn")
-# m2 = Manager.create(name: "Gabbie")
-# m3 = Manager.create(name: "Jeff")
+t1 = Trainer.create(name: "Lucas", age: 22)
 
-# d1 = Department.create(name: "Sales")
-# d2 = Department.create(name: "Marketing")
-# d3 = Department.create(name: "Accounting")
+dex1 = Pokedex.create(trainer_id: t1.id, trainer_name: t1.name)
 
-# e1 = Employee.create(name: "Brianna", manager:m1, department:d1)
-# e2 = Employee.create(name: "Chett", manager:m2, department:d2)
-# e3 = Employee.create(name: "Caryn", manager:m3, department:d3)
+
+p1 = Pokemon.create(name: "Steve", species: "pikachu", trainer_id: t1.id)
+p1 = Pokemon.create(name: "Carl", species: "treecko", trainer_id: t1.id)
