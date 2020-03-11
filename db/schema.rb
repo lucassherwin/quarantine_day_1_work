@@ -10,9 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_171957) do
+ActiveRecord::Schema.define(version: 2020_03_11_185002) do
 
-  create_table "pokedexs", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
+    t.string "name"
+    t.integer "quantity"
+    t.string "ability"
+    t.integer "value"
+    t.integer "trainer_id"
+  end
+
+  create_table "pokedexes", force: :cascade do |t|
     t.integer "trainer_id"
     t.integer "percent_complete"
     t.string "trainer_name"
