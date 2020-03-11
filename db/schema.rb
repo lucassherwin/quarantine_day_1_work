@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_03_11_185002) do
+ActiveRecord::Schema.define(version: 2020_03_11_191521) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_03_11_185002) do
     t.integer "trainer_id"
     t.integer "percent_complete"
     t.string "trainer_name"
+    t.string "color"
   end
 
   create_table "pokemons", force: :cascade do |t|
